@@ -1,0 +1,15 @@
+Simulation of IPL Fantasy League game:
+
+create a simulation of the IPL fantasy league game -http://games.espncricinfo.com/fantasy/homepage.aspx 
+
+list of players. Each player will have a price associated with him and a characteristic like Batsman/Bowler/All-rounder/WicketKeeper.
+When a user logs in, he gets to create his fantasy team. He gets to choose his team composition and a team name. He is given an arbitrary amount of 100 million dollars to create his team.
+
+He can choose players from the list and make his team. You need to ensure he makes his team within the allocated money and also is not violating the team composition (for e.g.: if his composition is 4 batsmen, 3 all-rounders, 1 wicketkeeper, 3 bowlers then he should not be allowed to select more than 4 batsmen).
+
+It uses MVC architecture. MODEL - data about players VIEW - the GUI for selecting and removing players and for making a team CONTROLLER - to update the model taking input from view. 1 page UI. Assume that the user is logged in. The UI provides the functionality to select the team-name, composition, select players and create his team. 
+
+list of 20-30 players for the user to choose from. Also, a team consist of 8 players instead of 11 to make things simpler. permit the following team compositions:
+3 batsmen, 1 wicketkeeper, 2 all rounders, 2 bowlers
+3 batsmen, 1 wicketkeeper, 1 all rounders, 3 bowlers
+4 batsmen, 1 wicketkeeper, 1 all rounders, 2 bowlers
